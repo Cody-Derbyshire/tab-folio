@@ -12,6 +12,7 @@ const images = [
   'https://i.ibb.co/d5GhPxq/wanderful-tshirt-smaller.webp',
   'https://i.ibb.co/LC15vgN/nomu-almond-smaller.png',
   'https://i.ibb.co/Pxm64vX/nomu-elevation-smaller.png',
+  'https://i.ibb.co/8KLpnwF/001-signup-desktop-light.webp',
 ];
 
 const Work = ({ bgCol, col }) => {
