@@ -1,0 +1,167 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lh-1 {
+  line-height: 100%;
+}
+
+@font-face {
+  font-family: 'BergenMono-Bold';
+  src: url('../fonts/bergen/BergenMono-Bold.otf');
+}
+@font-face {
+  font-family: 'BergenMono-BoldItalic';
+  src: url('../fonts/bergen/BergenMono-BoldItalic.otf');
+}
+
+.bergen-bold {
+  font-family: 'BergenMono-Bold';
+}
+.bergen-bolditalic {
+  font-family: 'BergenMono-BoldItalic' !important;
+}
+
+/* <uniquifier>: Use a unique and descriptive className
+ <weight>: Use a value from 100 to 900
+ <slant>: Use a value from -10 to 0 */
+
+/* .inter-<uniquifier > {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: 'slnt' <slant>;
+} */
+.inter {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+}
+.inter-italic {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'slnt' -10;
+}
+.inter-med {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+}
+.inter-meditalic {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'slnt' -10;
+}
+.inter-bold {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+}
+.inter-bolditalic {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'slnt' -10;
+}
+
+:root {
+  --fluid-24-64: clamp(1.5rem, 0.7857rem + 3.5714vi, 4rem);
+  --fluid-16-32: clamp(1rem, 0.7143rem + 1.4286vi, 2rem);
+  --fluid-16-48: clamp(1rem, 0.4286rem + 2.8571vi, 3rem);
+}
+
+.h1-clamp {
+  font-size: var(--fluid-24-64);
+}
+.h1-clamp-xs {
+  font-size: var(--fluid-16-48);
+}
+
+@font-face {
+  font-family: 'MadHomie';
+  src: url('../fonts/MadHomie.ttf');
+}
+
+.mad-homie {
+  font-family: 'MadHomie';
+}
+
+@font-face {
+  font-family: 'Kelsi-Regular';
+  src: url('../fonts/Kelsi-Regular.otf');
+}
+@font-face {
+  font-family: 'Kelsi-fill';
+  src: url('../fonts/Kelsi-fill.otf');
+}
+
+.kelsi {
+  font-family: 'Kelsi-Regular';
+}
+.kelsi-fill {
+  font-family: 'Kelsi-fill';
+}
+
+.major-mono-display-regular {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.silkscreen-regular {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.indie-flower-regular {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.permanent-marker-regular {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.anton-regular {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oswald-bold {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.jacquard-12-regular {
+  font-family: 'Jacquard 12', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

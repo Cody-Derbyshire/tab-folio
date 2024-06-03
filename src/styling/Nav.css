@@ -1,0 +1,11 @@
+.nav-wrapper {
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: left;
+  gap: 1rem;
+  margin: 2rem 0rem;
+}
+
+.hover-nav:hover {
+  opacity: 1 !important;
+}

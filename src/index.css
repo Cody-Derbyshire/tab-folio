@@ -1,0 +1,12 @@
+:root {
+  --dark-grey: #525252;
+  --light-grey: #f2f2f2;
+  color-scheme: light dark;
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

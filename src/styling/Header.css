@@ -1,0 +1,26 @@
+.btn {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name {
+  display: flex;
+}
+
+.header-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
