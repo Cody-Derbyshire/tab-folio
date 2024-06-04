@@ -1,27 +1,34 @@
 import '../styling/Work.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Modal from './Modal';
+import { shuffleArray } from '../functions/shuffle';
 
 const images = [
   'https://i.ibb.co/JQZ6yF6/devilsdraught-PRES-PRES-3.webp',
   'https://i.ibb.co/VQBBtCP/green-grove-branding-mockup.webp',
-  'https://i.ibb.co/hRzVHYz/SCALE-square-01.webp',
+  'https://i.ibb.co/Wxc3k8r/scale-cardpile.webp',
   'https://i.ibb.co/KwXH4M1/label-mockup-1.webp',
   'https://i.ibb.co/jH8LBNR/label-mockup-3.webp',
   'https://i.ibb.co/d5GhPxq/wanderful-tshirt-smaller.webp',
   'https://i.ibb.co/LC15vgN/nomu-almond-smaller.png',
   'https://i.ibb.co/Pxm64vX/nomu-elevation-smaller.png',
-  'https://i.ibb.co/8KLpnwF/001-signup-desktop-light.webp',
+  'https://i.ibb.co/1qM1gSS/001-signup-mockup.webp',
+  'https://i.ibb.co/S34SZdG/001-signup-macbook-mockup.webp',
 ];
 
 const Work = ({ bgCol, col }) => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [shuffledImages, setShuffledImages] = useState([]);
+
+  useEffect(() => {
+    setShuffledImages(shuffleArray(images));
+  }, []);
   return (
     <>
       <div className='work-wrapper' style={{ background: bgCol, color: col }}>
         <div className='gallery'>
-          {images.map((image, index) => (
+          {shuffledImages.map((image, index) => (
             <motion.img
               key={index}
               src={image}
