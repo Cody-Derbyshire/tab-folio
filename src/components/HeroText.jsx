@@ -4,20 +4,15 @@ import { useState, useEffect } from 'react';
 import '../styling/HeroText.css';
 import '../styling/fonts.css';
 
-const HeroText = ({ activeTab, setActiveTab, colorScheme, bgCol, col }) => {
-  const initStyle = {
-    color: col,
-    boxShadow: `inset 0 0 0 0 ${col}`,
-    padding: '0 0.25rem',
-    borderBottom: `solid clamp(0.15rem, 0.1071rem + 0.2143vi, 0.3rem) ${col}`,
-
-    transition: 'color .2s ease-in, box-shadow .2s ease-in',
-    cursor: 'pointer',
-  };
-  const hoverStyle = {
-    color: bgCol,
-    boxShadow: `inset 100rem 0 0 0 ${col}`,
-  };
+const HeroText = ({
+  activeTab,
+  setActiveTab,
+  colorScheme,
+  bgCol,
+  col,
+  initStyle,
+  hoverStyle,
+}) => {
   const [isEClicked, setIsEClicked] = useState(false);
   const [isPClicked, setIsPClicked] = useState(false);
   useEffect(() => {

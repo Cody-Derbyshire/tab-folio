@@ -4,9 +4,9 @@ import { useState } from 'react';
 import '../styling/Header.css';
 
 const fonts = [
-  'BergenMono-Bold',
+  /* 'BergenMono-Bold',
   'BergenMono-BoldItalic',
-  'Kelsi-Regular',
+  'Kelsi-Regular', */
   'Kelsi-fill',
 ];
 
@@ -41,26 +41,28 @@ const Header = ({ bgCol, col, colorScheme, setColorScheme }) => {
     <>
       <div className='header-wrapper' style={{ background: bgCol, color: col }}>
         <AnimatePresence mode='wait'>
-          <div
-            className='header-name'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <h1>C</h1>
-            {isHovered && (
-              <motion.h1
-                key='codyderbyshire'
-                className='uppercase'
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                exit={{ x: 20, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                style={{ fontFamily: randomFont() }}
-              >
-                ody Derbyshire
-              </motion.h1>
-            )}
-          </div>
+          <a href='/' style={{ display: 'inline', lineHeight: '1rem' }}>
+            <div
+              className='header-name'
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <h1 className='kelsi-fill'>C</h1>
+              {isHovered && (
+                <motion.h1
+                  key='codyderbyshire'
+                  className='uppercase'
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: 20, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ fontFamily: randomFont() }}
+                >
+                  ody Derbyshire
+                </motion.h1>
+              )}
+            </div>
+          </a>
         </AnimatePresence>
         <AnimatePresence mode='wait'>
           <div className='header-btn-wrapper'>

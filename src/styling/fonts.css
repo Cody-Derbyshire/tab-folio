@@ -26,17 +26,6 @@
   font-family: 'BergenMono-BoldItalic' !important;
 }
 
-/* <uniquifier>: Use a unique and descriptive className
- <weight>: Use a value from 100 to 900
- <slant>: Use a value from -10 to 0 */
-
-/* .inter-<uniquifier > {
-  font-family: 'Inter', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings: 'slnt' <slant>;
-} */
 .inter {
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
@@ -118,50 +107,7 @@
   font-family: 'Kelsi-fill';
 }
 
-.major-mono-display-regular {
-  font-family: 'Major Mono Display', monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-.silkscreen-regular {
-  font-family: 'Silkscreen', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.silkscreen-bold {
-  font-family: 'Silkscreen', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.indie-flower-regular {
-  font-family: 'Indie Flower', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.permanent-marker-regular {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.anton-regular {
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.bebas-neue-regular {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.oswald-bold {
-  font-family: 'Oswald', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.jacquard-12-regular {
-  font-family: 'Jacquard 12', system-ui;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+  font-family: 'VanguardCF-Heavy';
+  src: url('../fonts/vanguardcf-heavy.otf');
 }

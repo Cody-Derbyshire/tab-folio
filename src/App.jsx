@@ -6,6 +6,7 @@ import Work from './components/Work';
 import Me from './components/Me';
 
 import LeftFade from './functions/LeftFade';
+import RightFade from './functions/RightFade';
 
 import tabs from '../src/tabs.json';
 
@@ -26,20 +27,6 @@ const App = () => {
   const pink = '#ff6fff';
   const orange = '#ff5d01';
   const maroon = '#680030';
-
-  // light > light & dark
-  // dark > dark > light
-  // yellow > yellow & blue
-  // blue > blue & yellow
-  // green > green > darkGreen
-  // darkGreen > darkGreen & green
-  // purple > purple & blue
-  // pink > pink & maroon
-  // orange > orange & maroon
-  // maroon > maroon & yellow
-
-  /* const bgCol = colorScheme === 'light' ? light : dark;
-  const col = colorScheme === 'light' ? dark : light; */
 
   let bgCol, col;
 
@@ -90,6 +77,20 @@ const App = () => {
       break;
   }
 
+  const initStyle = {
+    color: col,
+    boxShadow: `inset 0 0 0 0 ${col}`,
+    padding: '0 0.25rem',
+    borderBottom: `solid clamp(0.15rem, 0.1071rem + 0.2143vi, 0.3rem) ${col}`,
+
+    transition: 'color .2s ease-in, box-shadow .2s ease-in',
+    cursor: 'pointer',
+  };
+  const hoverStyle = {
+    color: bgCol,
+    boxShadow: `inset 100rem 0 0 0 ${col}`,
+  };
+
   return (
     <>
       <div
@@ -121,20 +122,23 @@ const App = () => {
             colorScheme={colorScheme}
             bgCol={bgCol}
             col={col}
+            initStyle={initStyle}
+            hoverStyle={hoverStyle}
           />
         </LeftFade>
       </div>
 
-      {/* {activeTab === 'Work' && (
-        
-          <Work bgCol={bgCol} col={col} />
-        
-      )}
-      {activeTab === 'Contact' && <Me bgCol={bgCol} col={col} />} */}
-
-      <Work bgCol={bgCol} col={col} />
-
-      {/* <Me bgCol={bgCol} col={col} />  */}
+      {activeTab === 'Work' && <Work bgCol={bgCol} col={col} />}
+      <RightFade>
+        {activeTab === 'Contact' && (
+          <Me
+            bgCol={bgCol}
+            col={col}
+            initStyle={initStyle}
+            hoverStyle={hoverStyle}
+          />
+        )}
+      </RightFade>
     </>
   );
 };
