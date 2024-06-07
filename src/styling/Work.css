@@ -1,13 +1,17 @@
 .work-wrapper {
+  min-height: 100dvh;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
   justify-content: center;
-  padding: 1rem;
+
+  overflow: scroll;
 }
 
 @media screen and (min-width: 35rem) {
@@ -33,6 +37,10 @@
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .backdrop {

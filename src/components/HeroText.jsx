@@ -44,7 +44,7 @@ const HeroText = ({
               style={{ fontFamily: 'Inter', fontWeight: '500' }}
             >
               <span className='hello-wrapper'>
-                Hello{' '}
+                Hey there{' '}
                 <span className='material-symbols-outlined h1-clamp hand'>
                   waving_hand
                 </span>

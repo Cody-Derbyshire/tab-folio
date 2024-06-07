@@ -9,7 +9,7 @@ const Me = ({ bgCol, col, initStyle, hoverStyle }) => {
         <div className='me-left inter-med'>
           <motion.a
             href='https://www.linkedin.com/in/cody-derbyshire'
-            className='h1-clamp'
+            className='h1-clamp-xs'
             style={initStyle}
             whileHover={hoverStyle}
             target='_blank'
@@ -19,7 +19,7 @@ const Me = ({ bgCol, col, initStyle, hoverStyle }) => {
           </motion.a>
           <motion.a
             href='https://x.com/littleKodai'
-            className='h1-clamp'
+            className='h1-clamp-xs'
             style={initStyle}
             whileHover={hoverStyle}
             target='_blank'

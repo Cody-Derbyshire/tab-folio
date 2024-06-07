@@ -94,51 +94,56 @@ const App = () => {
   return (
     <>
       <div
-        className='main-wrapper inter-med '
         style={{
           background: bgCol,
           color: col,
         }}
       >
-        <div className='overlay'></div>
-        <Header
-          colorScheme={colorScheme}
-          setColorScheme={setColorScheme}
-          bgCol={bgCol}
-          col={col}
-        />
-
-        <Nav
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          tabs={tabs}
-          col={col}
-          bgCol={bgCol}
-        />
-        <LeftFade>
-          <HeroText
+        <div
+          className='main-wrapper inter-med '
+          style={{
+            background: bgCol,
+            color: col,
+          }}
+        >
+          <div className='overlay'></div>
+          <Header
+            colorScheme={colorScheme}
+            setColorScheme={setColorScheme}
+            bgCol={bgCol}
+            col={col}
+          />
+          <Nav
             activeTab={activeTab}
             setActiveTab={setActiveTab}
-            colorScheme={colorScheme}
-            bgCol={bgCol}
+            tabs={tabs}
             col={col}
-            initStyle={initStyle}
-            hoverStyle={hoverStyle}
+            bgCol={bgCol}
           />
-        </LeftFade>
+          <LeftFade>
+            <HeroText
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+              colorScheme={colorScheme}
+              bgCol={bgCol}
+              col={col}
+              initStyle={initStyle}
+              hoverStyle={hoverStyle}
+            />
+          </LeftFade>
+        </div>
+        {activeTab === 'Work' && <Work bgCol={bgCol} col={col} />}
+        <RightFade>
+          {activeTab === 'Contact' && (
+            <Me
+              bgCol={bgCol}
+              col={col}
+              initStyle={initStyle}
+              hoverStyle={hoverStyle}
+            />
+          )}
+        </RightFade>
       </div>
-
-      {activeTab === 'Work' && <Work bgCol={bgCol} col={col} />}
-      <RightFade>
-        {activeTab === 'Contact' && (
-          <Me
-            bgCol={bgCol}
-            col={col}
-            initStyle={initStyle}
-            hoverStyle={hoverStyle}
-          />
-        )}
-      </RightFade>
     </>
   );
 };

@@ -11,7 +11,7 @@
 .overlay {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 1000;
   overflow-x: hidden;
   top: 0;
@@ -29,7 +29,7 @@ a:visited {
 
 .main-wrapper {
   padding: 1rem;
-  height: 100vh;
+  height: 100dvh;
   display: grid;
   grid-template-rows: min-content min-content auto;
   align-items: center;

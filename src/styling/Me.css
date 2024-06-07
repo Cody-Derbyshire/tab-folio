@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  gap: 0.5rem;
 }
 
 .meimg {

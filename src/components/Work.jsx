@@ -1,8 +1,10 @@
 import '../styling/Work.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { motion } from 'framer-motion';
 import Modal from './Modal';
 import { shuffleArray } from '../functions/shuffle';
+import Loading from './Loading';
+const LazyImage = lazy(() => import('./LazyImage'));
 
 const images = [
   'https://i.ibb.co/JQZ6yF6/devilsdraught-PRES-PRES-3.webp',
@@ -29,14 +31,14 @@ const Work = ({ bgCol, col }) => {
       <div className='work-wrapper' style={{ background: bgCol, color: col }}>
         <div className='gallery'>
           {shuffledImages.map((image, index) => (
-            <motion.img
-              key={index}
-              src={image}
-              alt={`Gallery item ${index + 1}`}
-              className='gallery-item'
-              whileHover={{ scale: 1.1 }}
-              onClick={() => setSelectedImage(image)}
-            />
+            <Suspense fallback={<Loading />} key={index}>
+              <LazyImage
+                src={image}
+                alt={`Gallery item ${index + 1}`}
+                className='gallery-item'
+                onClick={() => setSelectedImage(image)}
+              />
+            </Suspense>
           ))}
 
           {selectedImage && (
