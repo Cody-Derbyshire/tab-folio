@@ -27,6 +27,15 @@ const Me = ({ bgCol, col, initStyle, hoverStyle }) => {
             twitter{' '}
             <span className='material-symbols-outlined'>north_east</span>
           </motion.a>
+          <motion.a
+            href='https://github.com/Cody-Derbyshire'
+            className='h1-clamp-xs'
+            style={initStyle}
+            whileHover={hoverStyle}
+            target='_blank'
+          >
+            github <span className='material-symbols-outlined'>north_east</span>
+          </motion.a>
         </div>
         <div className='me-right  inter-italic'>
           <p className='h1-clamp-xs' style={{ opacity: '50%' }}>

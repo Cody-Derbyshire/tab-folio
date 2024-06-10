@@ -17,6 +17,7 @@ const images = [
   'https://i.ibb.co/Pxm64vX/nomu-elevation-smaller.png',
   'https://i.ibb.co/1qM1gSS/001-signup-mockup.webp',
   'https://i.ibb.co/S34SZdG/001-signup-macbook-mockup.webp',
+  'https://i.ibb.co/9tFPwf1/doozler.gif',
 ];
 
 const Work = ({ bgCol, col }) => {
