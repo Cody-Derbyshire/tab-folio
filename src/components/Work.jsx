@@ -18,6 +18,9 @@ const images = [
   'https://i.ibb.co/1qM1gSS/001-signup-mockup.webp',
   'https://i.ibb.co/S34SZdG/001-signup-macbook-mockup.webp',
   'https://i.ibb.co/9tFPwf1/doozler.gif',
+  'https://i.ibb.co/F4ZGgkz/kaleido-box-gradient-mockup.webp',
+  'https://i.ibb.co/w6dvZ2v/kaleido-pink-purple-mockup.webp',
+  'https://i.ibb.co/nRFBkgR/kaleido-purple-gradient-mockup.webp',
 ];
 
 const Work = ({ bgCol, col }) => {

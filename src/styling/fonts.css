@@ -77,9 +77,11 @@
 
 .h1-clamp {
   font-size: var(--fluid-24-64);
+  text-wrap: balance;
 }
 .h1-clamp-xs {
   font-size: var(--fluid-16-48);
+  text-wrap: balance;
 }
 
 @font-face {
