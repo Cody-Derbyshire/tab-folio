@@ -78,10 +78,12 @@
 .h1-clamp {
   font-size: var(--fluid-24-64);
   text-wrap: balance;
+  letter-spacing: -1px;
 }
 .h1-clamp-xs {
   font-size: var(--fluid-16-48);
   text-wrap: balance;
+  letter-spacing: -1px;
 }
 
 @font-face {
