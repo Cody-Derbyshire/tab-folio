@@ -7,16 +7,18 @@ const LazyImage = ({ src, alt, onClick, className }) => {
 
   return (
     <>
-      <motion.img
-        className={className}
-        whileHover={{
-          scale: 1.1,
-        }}
-        src={src}
-        alt={alt}
-        onLoad={() => setLoaded(true)}
-        onClick={onClick}
-      />
+      <div className='gallery-item-wrapper'>
+        <motion.img
+          className={className}
+          whileHover={{
+            scale: 1.1,
+          }}
+          src={src}
+          alt={alt}
+          onLoad={() => setLoaded(true)}
+          onClick={onClick}
+        />
+      </div>
     </>
   );
 };
